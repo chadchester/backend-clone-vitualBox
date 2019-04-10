@@ -28,4 +28,4 @@ app.use(express.urlencoded({ extended: true})); //permite o envio de documentos 
 app.use('/files', express.static(path.resolve(__dirname, '..', 'temp')));
 app.use(require('./routes'));
 
-server.listen(3001);
+server.listen(process.env.PORT || 3001);
