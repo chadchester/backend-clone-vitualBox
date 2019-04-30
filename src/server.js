@@ -14,7 +14,7 @@ io.on("connection", socket => {
         socket.join(box);
     })
 } );
-mongoose.connect('mongodb+srv://linkdb:Link123@cluster0-a9shs.mongodb.net/test?retryWrites=true', {
+mongoose.connect('[MBkey]', {
     useNewUrlParser: true,
     
 });
